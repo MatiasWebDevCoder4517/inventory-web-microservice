@@ -1,0 +1,9 @@
+aiofiles
+fastapi
+httpx
+pre-commit
+psycopg2-binary
+pydantic-core
+pypi
+SQLAlchemy
+uvicorn

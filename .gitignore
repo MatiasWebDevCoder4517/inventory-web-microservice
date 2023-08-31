@@ -1,0 +1,39 @@
+*.pyc
+*.logs
+*.log
+*.log.*
+*.png
+*.sh
+*.xlsx
+.vscode
+.devcontainer
+.logs
+
+# Custom
+main_test.py
+execute_test.py
+pseudocode.py
+refactor1.py
+
+# Tecnoandina
+logs/
+
+# Environments
+.env
+.env.*
+.venv
+env/
+logs/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# mypy
+.mypy_cache/
