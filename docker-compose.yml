@@ -1,13 +1,16 @@
-version: "3"
+version: "3.8"
 
 services:
   msw-inventory:
-    build: .
+    image: postgres
+    container_name: msw-inventory-postgres
     ports:
-      - 8080:8080
+      - 6500:5432
+    restart: always
     env_file:
       - ./.env
-    deploy:
-      resources:
-        limits:
-          memory: 500M
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+
+volumes:
+  postgres-db:
